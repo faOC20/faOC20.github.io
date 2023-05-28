@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  display: flex;
   font-family: 'Rubik', sans-serif;
   background-color: #f2f2f2;
   background-image: url("fondo.jpg");
@@ -13,9 +14,13 @@ body {
   overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  
+  min-height: 100vh;
   overscroll-behavior-x: none;
-  
+  flex-direction: column;
+}
+
+main{
+  flex: 1;
 }
 
 header {
