@@ -42,9 +42,6 @@ header > *{
   display: flex;
   background-color: #112569;
   opacity: 1;
-  background-image: linear-gradient(30deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(150deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(30deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(150deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(60deg, #11256977 25%, transparent 25.5%, transparent 75%, #11256977 75%, #11256977), linear-gradient(60deg, #11256977 25%, transparent 25.5%, transparent 75%, #11256977 75%, #11256977);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   color: rgb(255, 255, 255);
   padding: 0;
   
@@ -392,9 +389,6 @@ footer {
   justify-content: space-around;
   background-color: #112569;
   opacity: 1;
-  background-image: linear-gradient(30deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(150deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(30deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(150deg, #112569 12%, transparent 12.5%, transparent 87%, #112569 87.5%, #112569), linear-gradient(60deg, #11256977 25%, transparent 25.5%, transparent 75%, #11256977 75%, #11256977), linear-gradient(60deg, #11256977 25%, transparent 25.5%, transparent 75%, #11256977 75%, #11256977);
-  background-size: 80px 140px;
-  background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
   height: 80%;
   
 }
