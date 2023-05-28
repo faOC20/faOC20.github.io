@@ -452,13 +452,18 @@ footer {
   }
 
   #logo{
-    width: 200px;
+    width: 300px;
     height: 150px;
   }
 
   .flecha-der, .flecha-izq{
     display: none;
   }
+  
+  .container-header{
+    height: 160px;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
