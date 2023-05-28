@@ -448,11 +448,11 @@ footer {
   #menu{
     display: block;
     color: white;
-    font-size: 50px;
+    font-size: 120px;
   }
 
   #logo{
-    width: 415px;
+    width: 450px;
     height: 250px;
     align-self: center;
   }
