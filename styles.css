@@ -470,6 +470,10 @@ footer {
     height: 280px;
   }
   
+  #about{
+    height: 1200px;
+  }
+  
 }
 
 @media screen and (max-width: 1200px) {
