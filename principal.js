@@ -22,19 +22,5 @@ leftButton.addEventListener("click", function () {
   }
 });
 
-rightButton.addEventListener("click", function () {
 
-  if (currentImage === 1) {
-    imagenDinamica.style.backgroundImage = "url('principal2.jpg')";
-    screenText.innerHTML = "De que se puede, se puede!"
-    otherScreenText.innerHTML = ""
-    currentImage = 2
-  }
-  else {
-    imagenDinamica.style.backgroundImage = "url('principal.jpg')";
-    screenText.innerHTML = "Gilberto Pinto"
-    otherScreenText.innerHTML = "Gobernador del Estado Sucre"
-    currentImage = 1
-  }
-});
 
