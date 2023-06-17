@@ -93,8 +93,7 @@ header > *{
 
 
 .container-nav {
-  width: 100%;
-  z-index: 10000000;
+  z-index: 1000;
   display: flex;
   justify-content: center;
   opacity: 1;
@@ -138,15 +137,13 @@ nav a {
 
 
 #menu{
+  z-index: 2000;
   display: none;
 }
 
 #btn-registro {
-  padding: 1px 20px;
     border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
+    border-radius: px;
     background-color: #ffb300;
     color: #112569;
     font-weight: bold;
@@ -469,18 +466,41 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
+  
   .container-nav{
+    
     display: none;
+    
+    box-shadow: 0 0 0 100vmax rgb(0,0,0,.5);
+    background-color: #112569;
+    position: absolute;
+    flex-direction: column;
+    align-items: end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    margin: 0;
+  }
+
+  .container-nav.visible{
+    display: block;
+  }
+
+  .container-nav li{
+    margin: 30px;
   }
 
   #menu{
+    border: none;
+    color: #f2f2f2;
+    background: none;
+    font-size: 50px;
     display: block;
-    color: white;
-    font-size: 120px;
   }
 
   #logo{
-    width: 450px;
+    width: 400px;
     height: 250px;
     align-self: center;
   }
@@ -490,23 +510,24 @@ footer {
   }
   
   .container-header{
-    height: 280px;
+    height: 210px;
   }
-  
+
   #about{
-    height: 1800px;
+    height: 1200px;
   }
   
 }
 
 @media screen and (max-width: 1200px) {
   
+  
   footer{
-    display: none;
+    display: none ;
     height: 130px;
   }
   
- 
+  
 
 
 }
