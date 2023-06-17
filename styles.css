@@ -102,7 +102,11 @@ header > *{
   font-size: 20px;
 }
 
-nav ul {
+#cerrar{
+  display: none;
+}
+
+.nav-list {
 
   list-style: none;
   display: flex;
@@ -110,17 +114,16 @@ nav ul {
   margin-right: 30px;
 }
 
-nav li {
+.nav-list li {
   transition: transform 0.3s ease-out;
   margin-right: 2em;
 }
 
-nav li:hover {
+.nav-list li:hover {
   background: rgb(28, 172, 189);
   background: linear-gradient(0deg, rgba(28, 172, 189, 0.4038749288778011) 14%, rgba(22, 183, 255, 0) 100%);
-  transform: scale(1.1);
   border-bottom: 2px solid #11256977;
-  margin-bottom: -1px;
+
 }
 
 nav a {
@@ -128,16 +131,14 @@ nav a {
   text-decoration: none;
 }
 
-.container-nav{
-  justify-content: start;
-}
+
 
 
 
 
 
 #menu{
-  z-index: 2000;
+ 
   display: none;
 }
 
@@ -468,35 +469,55 @@ footer {
 @media screen and (max-width: 1000px) {
   
   .container-nav{
-    
-    display: none;
-    
-    box-shadow: 0 0 0 100vmax rgb(0,0,0,.5);
+    flex-direction: column;
+    display: flex;
+    box-shadow: 2px 3px 10px 20px rgb(0,0,0,.3);
     background-color: #112569;
     position: absolute;
-    flex-direction: column;
-    align-items: end;
+    right: -700px;
     top: 0;
-    right: 0;
-    bottom: 0;
-    padding: 2rem;
+    padding: 2rem;;
     margin: 0;
+    align-items: center;
+    opacity: 1;
+   /* visibility: hidden;*/
+    transition: all 0.3s ease-in-out;
   }
 
+  .container-nav.active {
+    top: 0;
+    right: 0;
+  }
+
+  .nav-list{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 95px;
+  }
+
+ 
   .container-nav.visible{
-    display: block;
+    opacity: 1;
+    visibility: visible;
   }
 
   .container-nav li{
     margin: 30px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
   }
 
-  #menu{
+  #menu,
+  #cerrar{
+    cursor: pointer;
     border: none;
     color: #f2f2f2;
     background: none;
-    font-size: 50px;
-    display: block;
+    font-size: 95px;
+    display: flex;
   }
 
   #logo{
@@ -510,7 +531,7 @@ footer {
   }
   
   .container-header{
-    height: 210px;
+    height: 240px;
   }
 
   #about{
