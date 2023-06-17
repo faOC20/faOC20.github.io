@@ -502,12 +502,11 @@ footer {
 @media screen and (max-width: 1200px) {
   
   footer{
+    display: none;
     height: 130px;
   }
   
-  .footer-container div{
-    font-size: 9px;
-  }
+ 
 
 
 }
