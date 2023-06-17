@@ -10,8 +10,10 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
   
     nav.classList.remove("visible");
-    nav.classList.toggle('active');
+    nav.classList.remove('active');
   
 });
+
+
 
 
