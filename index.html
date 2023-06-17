@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
   <header>
 
     <div class="container-header">
@@ -20,19 +20,21 @@
       </div>
 
       <div class="container-title">
-        <div class="container-nav">
+        <div>
+          <!--<button id="menu"><i class="fa-solid fa-bars"></i></button>-->
+          <button id="menu"><i class="fa-solid fa-bars"></i></button>
           <nav>
-            <ul>
+            <ul class="container-nav">
               <li><a href="#about">NOTICIAS</a></li>
               <li><a href="#resources">SERVICIOS</a></li>
               <li><a href="#contact">CONTACTO</a></li>
-              
+              <li><a href="#register" id="btn-registro">REGISTRO</a></li>
             </ul>
           </nav>
-          <button onclick="window.location.href = 'registro.html'" id="btn-registro">REGISTRO</button>
+          
           
         </div>
-        <a id="menu" href="ddede"><i class="fa-solid fa-bars"></i></a>
+        
       </div>
 
     </div>
@@ -132,6 +134,7 @@
 
   <script src="https://kit.fontawesome.com/900d77db9c.js" crossorigin="anonymous"></script>
   <script src="principal.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
